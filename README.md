@@ -5,7 +5,9 @@ This is a BASH wrapper for the quizapi.io API
 
 ## Prerequisites
 
-* An API Key for the Quiz API, you can get it totally for **free for developers** (here)[https://quizapi.io/register]
+* An API Key for the Quiz API, you can get it totally for **free for developers**:
+
+https://quizapi.io/clientarea/settings/token
 
 * jq installed, if you try to run the script without having `jq` installed you will get the following message:
 
@@ -77,4 +79,4 @@ quiz.sh -a API_KEY [-c Category] [-d Difficulty] [-t Tags]
 
 For more information, checout the official **QuizAPI Documentation** here:
 
-(QuizAPI Documentation)[http://quizapi.bobbyiliev.com/docs/1.0/overview]
+http://quizapi.bobbyiliev.com/docs/1.0/overview
