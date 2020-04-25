@@ -234,9 +234,10 @@ if [ "$content_check" -gt "0" ] ; then
         while menu && read -rp "$prompt" num && [[ "$num" ]]; do
                 [[ "$num" != *[![:digit:]]* ]] &&
                 (( num > 0 && num <= ${#options[@]} )) ||
-                { msg="Invalid option: $num"; continue; }
+                { msg="Invalid option: $num"; clear; continue; }
                 ((num--)); msg="${options[num]} was ${choices[num]:+un}checked"
                 [[ "${choices[num]}" ]] && choices[num]="" || choices[num]="+"
+                clear
         done
 
         answer_selected=()
