@@ -79,4 +79,4 @@ quiz.sh -a API_KEY [-c Category] [-d Difficulty] [-t Tags]
 
 For more information, checout the official **QuizAPI Documentation** here:
 
-http://quizapi.bobbyiliev.com/docs/1.0/overview
+http://quizapi.io/docs/1.0/overview
