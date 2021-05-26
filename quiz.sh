@@ -94,7 +94,7 @@ fi
 # Question formatting
 ##
 function get_questions(){
-        content=$( curl -s ${url}/${quiz_endpoint} -G -d limit=1 -d category=${category} -d difficulty=${difficulty} -d tags=${tags} -H "X-Api-Key: ${API_KEY}" -o ${temp_quiz}  )
+        content=$( curl -Ls ${url}/${quiz_endpoint} -G -d limit=1 -d category=${category} -d difficulty=${difficulty} -d tags=${tags} -H "X-Api-Key: ${API_KEY}" -o ${temp_quiz}  )
 }
 
 ##
